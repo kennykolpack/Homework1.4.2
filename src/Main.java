@@ -8,15 +8,15 @@ public class Main {
         int total = 0;
         int month = 0;
         while (total < 2_459_000) {
-            total = total + amount;
-            month = month + 1;
+            total += amount;
+            month++;
             System.out.println("Месяц " + month + " сумма накоплений равна " + total);
         }
         // Задача 2
         System.out.println("Задача 2");
         int number = 0;
         while (number < 10) {
-            number = number + 1;
+            number++;
             System.out.print(number + " ");
         }
         System.out.println("\n");
@@ -39,59 +39,54 @@ public class Main {
         System.out.println("Домашнее задание 2");
         // Задача 1
         System.out.println("Задача 1");
-        int total1 = 0;
-        int amount1 = 15000;
+        total = 0;
+        amount = 15000;
         for (int i = 1; i <= 60; i++) {
-            total1 = total1 + total1 * 7 / 100;
-            total1 = total1 + amount1;
-            System.out.println("Месяц " + i + " сумма накоплений равна " + total1);
+            total += total * 7 / 100;
+            total += amount;
+            System.out.println("Месяц " + i + " сумма накоплений равна " + total);
         }
         // Задача 2
         System.out.println("Задача 2");
-        int total2 = 0;
-        int amount2 = 15000;
+        total = 0;
+        amount = 15000;
         for (int i = 1; i <= 60; i++) {
-            total2 = total2 + total2 * 7 / 100;
-            total2 = total2 + amount2;
+            total += total * 7 / 100;
+            total += amount;
             if (i % 6 == 0) {
-                System.out.println("Месяц " + i + " сумма накоплений равна " + total2);
+                System.out.println("Месяц " + i + " сумма накоплений равна " + total);
             }
         }
         // Задача 3
         System.out.println("Задача 3");
-        int total3 = 0;
-        int amount3 = 15000;
+        total = 0;
+        amount = 15000;
         for (int i = 1; i <= 108; i++) {
-            total3 = total3 + total3 * 7 / 100;
-            total3 = total3 + amount3;
+            total += total * 7 / 100;
+            total += amount;
             if (i % 6 == 0) {
-                System.out.println("Месяц " + i + " сумма накоплений равна " + total3);
+                System.out.println("Месяц " + i + " сумма накоплений равна " + total);
             }
         }
         //Задача 4
         System.out.println("Задача 4");
-        int friday = 7;
-        for (int i = 1; i < 31; i++) {
-            if (i % friday == 0) {
-                System.out.println("Сегодня пятница, " + i + "-е число. Необходимо подготовить отчет");
-            }
+        for (int friday = 5; friday < 31; friday += 7) {
+                System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
         }
         //Домашнее задание 3
         System.out.println("Домашнее задание 3");
         //Задача 1
         System.out.println("Задача 1");
-        int year1 = 1822;
-        int year2 = 2122;
-        for (int i = 0; i <= 2122; i = i + 79) {
-            if (i > year1 && i < year2) {
-                System.out.println(i);
+        for (int year = 0; year <= 2122; year += 79) {
+            if (year > 1822 && year < 2122) {
+                System.out.println(year);
             }
         }
         // Задача 2
         System.out.println("Задача 2");
         for (int i = 1; i <= 10; i++) {
-            int two = 2 * i;
-            System.out.println("2 * " + i + " = " + two);
+            int solution = 2 * i;
+            System.out.println("2 * " + i + " = " + solution);
         }
     }
 }
